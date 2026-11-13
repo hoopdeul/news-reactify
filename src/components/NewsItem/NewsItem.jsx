@@ -10,7 +10,7 @@ const NewsItem = ({item}) => {
             <div className={styles.info}>
                 <h3 className={styles.title}>{item.title}</h3>
             <p className={styles.extra}>
-                {formatTimeAgo(item.pubDate)} by {item.creator.join(', ') || 'Unknown'}
+                {formatTimeAgo(item.pubDate)} by {item.creator}
             </p>
             </div>
         </li>
